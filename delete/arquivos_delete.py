@@ -10,5 +10,5 @@ class Delete(Resource):
         arquivo_delete = arq
       if arquivo_delete:
         os.remove(UPLOAD_FOLDER + "/" + nome)
-        return "Aquivo removido com sucesso!", 200
-    return "Arquivo não encontrado", 500
+        return "<h2>Aquivo removido com sucesso!</h2>", 200
+    return "<h2>Arquivo não encontrado</h2>", 500
