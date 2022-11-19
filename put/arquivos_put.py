@@ -13,5 +13,5 @@ class PutFile(Resource):
         arquivo_upload = arq
       if arquivo_upload:
         arquivo.save(os.path.join(UPLOAD_FOLDER, arquivo_upload))
-        return "Aquivo alterado com sucesso !", 200
-    return "Arquivo não encontrado", 500
+        return "<h2>Aquivo alterado com sucesso !</h2>", 200
+    return "<h2>Arquivo não encontrado</h2>", 500
