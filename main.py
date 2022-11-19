@@ -2,7 +2,6 @@ from get.arquivos import Download_all, Listar, Download_files_get,Home
 from post.arquivos_post import Dowload_files, Upload_file, Dowload_files_Send_Link
 from put.arquivos_put import PutFile
 from delete.arquivos_delete import Delete
-
 from flask_cors import CORS
 import flask as fl
 from flask_restful import Api
@@ -22,4 +21,4 @@ app.add_resource(PutFile, "/put_file/<string:nome>")
 app.add_resource(Delete, "/delete/<string:nome>")
 
 if __name__ == "__main__":
-  api.run(host='0.0.0.0', port=3000, debug="TRUE")
+  api.run(host='0.0.0.0', port=3000)
